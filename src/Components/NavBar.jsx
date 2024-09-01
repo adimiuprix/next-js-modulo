@@ -7,6 +7,7 @@ const NavBar = () => {
                 <ul className="flex space-x-4">
                     <li><a href="/" className="text-white hover:text-gray-300">Beranda</a></li>
                     <li><a href="/parshing" className="text-white hover:text-gray-300">Parshing</a></li>
+                    <li><a href="/array" className="text-white hover:text-gray-300">Array</a></li>
                 </ul>
             </div>
         </nav>
