@@ -5,7 +5,7 @@ const NavBar = () => {
 
     return(
         <>
-            <div className="container navbar bg-primary text-primary-content">
+            <div className="navbar bg-primary text-primary-content">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -22,15 +22,20 @@ const NavBar = () => {
                                 d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </div>
-                        <ul
-                            tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <ul tabIndex={0} className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                             <li><Link href="/" className="text-blue-500 hover:text-gray-300">Beranda</Link></li>
                             <li>
                                 <a>Parshing Data</a>
                                 <ul className="p-2">
                                     <li><Link href="/parshing" className="text-blue-500 hover:text-gray-300">Parshing</Link></li>
                                     <li><Link href="/array" className="text-blue-500 hover:text-gray-300">Array</Link></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Prisma</a>
+                                <ul className="p-2">
+                                    <li><Link href="/prisma/tampil" className="text-blue-500 hover:text-gray-300">Tampil data</Link></li>
+                                    <li><Link href="/prisma/buat" className="text-blue-500 hover:text-gray-300">Create</Link></li>
                                 </ul>
                             </li>
                         </ul>
@@ -42,11 +47,22 @@ const NavBar = () => {
                         <li><Link href="/" className="text-blue-500 hover:text-gray-300">Beranda</Link></li>
                         <li>
                             <details>
-                            <summary>Parent</summary>
+                            <summary>Parshing</summary>
                             <ul className="p-2">
                                 <li><Link href="/parshing" className="text-blue-500 hover:text-gray-300">Parshing</Link></li>
                                 <li><Link href="/array" className="text-blue-500 hover:text-gray-300">Array</Link></li>
                             </ul>
+                            </details>
+                        </li>
+                        <li>
+                            <details>
+                                <summary>Prisma</summary>
+                                <ul className="p-2">
+                                    <li>
+                                        <Link href="/prisma/tampil" className="text-blue-500 hover:text-gray-300">Tampil data</Link>
+                                        <Link href="/prisma/buat" className="text-blue-500 hover:text-gray-300">Create</Link>
+                                    </li>
+                                </ul>
                             </details>
                         </li>
                     </ul>

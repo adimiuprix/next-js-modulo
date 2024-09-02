@@ -1,10 +1,10 @@
 async function getDataFromApi() {
   const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
-  
+
   if (!response.ok) {
     throw new Error('Gagal mendapatkan data')
   }
-  
+
   return response.json() // Mengubah data dari API menjadi format JSON
 }
 
