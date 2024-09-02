@@ -9,11 +9,13 @@ async function Array(){
             <h1 className="mb-4 text-2xl font-bold">Data array</h1>
 
             {data.map((item, index) => (
-            <div key={index} className="p-4 mb-5 bg-white rounded shadow-md">
-                <p><strong>Id:</strong> {item.id}</p>
-                <p><strong>Judul:</strong> {item.title}</p>
-                <p><strong>Genre:</strong> {item.genre}</p>
-                <p><strong>Platform:</strong> {item.platform}</p>
+            <div key={index} className="max-w-md card bg-primary text-primary-content">
+                <div className="card-body">
+                    <p><strong>Id:</strong> {item.id}</p>
+                    <p><strong>Judul:</strong> {item.title}</p>
+                    <p><strong>Genre:</strong> {item.genre}</p>
+                    <p><strong>Platform:</strong> {item.platform}</p>
+                </div>
             </div>
             ))}
 

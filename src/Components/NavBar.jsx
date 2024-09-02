@@ -27,13 +27,12 @@ const NavBar = () => {
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                             <li><Link href="/" className="text-blue-500 hover:text-gray-300">Beranda</Link></li>
                             <li>
-                            <a>Parshing Data</a>
-                            <ul className="p-2">
-                                <li><Link href="/parshing" className="text-blue-500 hover:text-gray-300">Parshing</Link></li>
-                                <li><Link href="/array" className="text-blue-500 hover:text-gray-300">Array</Link></li>
-                            </ul>
+                                <a>Parshing Data</a>
+                                <ul className="p-2">
+                                    <li><Link href="/parshing" className="text-blue-500 hover:text-gray-300">Parshing</Link></li>
+                                    <li><Link href="/array" className="text-blue-500 hover:text-gray-300">Array</Link></li>
+                                </ul>
                             </li>
-                            <li><a>Item 3</a></li>
                         </ul>
                     </div>
                     <a className="text-xl btn btn-ghost">Next Modulo</a>
@@ -51,9 +50,6 @@ const NavBar = () => {
                             </details>
                         </li>
                     </ul>
-                </div>
-                <div className="navbar-end">
-                    <a className="btn">Button</a>
                 </div>
             </div>
         </>
